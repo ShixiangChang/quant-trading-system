@@ -1,0 +1,21 @@
+# 运行时数据（数据库、模型缓存、回测输出）——体积大且不断变化，不进版本库
+data/
+*.db
+*.db-wal
+*.db-shm
+
+# 本地密钥（真实 key 只留本机，不提交）
+monitor/secrets.py
+
+# 编辑器 / 本地配置 / 缓存
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+*.pyo
+
+# 运行产生的 CSV 快照
+binance_market_analysis.csv
+
+# 本地工具工作目录
+.workbuddy/
